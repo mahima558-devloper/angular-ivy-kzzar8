@@ -1,0 +1,7 @@
+<h1>this is the parent component</h1>
+<!-- <p>{{ item }}</p> -->
+<input type="text" placeholder="Enter number" #box />
+<button (click)="updateData(box.value)">update data</button>
+
+<!-- <app-child (updateDataEvent)="updateData($event)"></app-child> -->
+<app-child [items]="item"></app-child>
